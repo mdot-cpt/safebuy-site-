@@ -36,21 +36,32 @@
 <body>
   
 <!-- Header -->
-<header class="bg-[#003366] dark:bg-[#002244] text-white sticky top-0 z-50 py-8 md:py-10 lg:py-12">
-  <div class="container mx-auto px-6 flex justify-between items-center">
-    <div class="flex items-center">
-      <img src="safebuy-logo.png" alt="SafeBuy Vehicle Inspections Logo" class="h-40 md:h-52 lg:h-64 w-auto -mt-12 md:-mt-16 lg:-mt-20 -mb-12 md:-mb-16 lg:-mb-20">
+ <header class="bg-[#003366] dark:bg-[#002244] text-white sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="safebuy-logo.png" alt="SafeBuy Vehicle Inspections Logo" class="h-40 md:h-52 lg:h-64 w-auto -mt-12 md:-mt-16 lg:-mt-20 -mb-12 md:-mb-16 lg:-mb-20">
+      </div>
+      <nav class="hidden md:flex space-x-10 text-lg">
+        <a href="#home" class="hover:opacity-80 transition">Home</a>
+        <a href="#how" class="hover:opacity-80 transition">How It Works</a>
+        <a href="#why" class="hover:opacity-80 transition">Why Choose Us</a>
+        <a href="#reports" class="hover:opacity-80 transition">Reports</a>
+        <a href="#contact" class="hover:opacity-80 transition">Contact</a>
+      </nav>
+      <!-- Clean Toggle Switch -->
+      <div class="flex items-center">
+        <input type="checkbox" id="theme-toggle" class="toggle-checkbox absolute opacity-0 cursor-pointer w-full h-full">
+        <label for="theme-toggle" class="toggle-label relative inline-block w-12 h-7 rounded-full bg-gray-400 dark:bg-gray-600 cursor-pointer transition">
+          <span class="toggle-knob absolute left-1 top-1 w-5 h-5 bg-white rounded-full transition"></span>
+        </label>
+      </div>
+      <div class="md:hidden">
+        <i class="fas fa-bars text-2xl"></i>
+      </div>
     </div>
-    <nav class="hidden md:flex space-x-10 text-lg">
-      <a href="#home" class="hover:opacity-80 transition">Home</a>
-      <a href="#how" class="hover:opacity-80 transition">How It Works</a>
-      <a href="#why" class="hover:opacity-80 transition">Why Choose Us</a>
-      <a href="#reports" class="hover:opacity-80 transition">Reports</a>
-      <a href="#contact" class="hover:opacity-80 transition">Contact</a>
-    </nav>
-    <!-- Rest of your toggle, mobile menu, etc. -->
-  </div>
-</header>
+  </header>
+
+
 
   <!-- Hero with Video Background -->
   <section id="home" class="relative h-screen flex items-center justify-center text-white overflow-hidden">
@@ -217,6 +228,7 @@
 
 </body>
 </html>
+
 
 
 
